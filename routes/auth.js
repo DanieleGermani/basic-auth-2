@@ -100,7 +100,6 @@ router.post('/login', function(req, res, next) {
     }
 
   });
-
 });
 
 
