@@ -1,0 +1,13 @@
+<p>Pagina de índice</p>
+
+<% if (typeof errorMessage !== "undefined") { %>
+  <div class="error-message"><%= errorMessage %></div>
+<% } %>
+
+<a class="auth-link" href="/auth/signup">Crea tu cuenta aqui</a>
+<% if (typeof session == "undefined") { %>
+  <a class="auth-link" href="/auth/login">Haz login</a>
+<% }else{ %>
+  <a class="auth-link" href="/secret">PAGINA SECRETA</a>
+  <a class="auth-link" href="/auth/logout">Logout</a>
+<% } %>
